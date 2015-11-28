@@ -285,7 +285,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'ZrOg0xs1BUMkIoBY9SKbwBgm_kh4zk6upzPNUBgMfd4lYqNIVSQtmn2pEyySRVY-QR2f5PwTKQ';
 
 /**
  * Deployment identifier.
@@ -721,3 +721,20 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 if (file_exists('/var/www/site-php')) {
   require('/var/www/site-php/drupal8devel/drupal8devel-settings.inc');
 }
+$databases['default']['default'] = array (
+  'database' => 'drupal8devel',
+  'username' => 'root',
+  'password' => '',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['install_profile'] = 'standard';
+$config_directories['sync'] = 'sites/default/files/config_iHI7EyPkQICm6rknwha6AkmZnutS19bLaTNZOkx15L7_0-tGFj2NsZWq5E0kbomeWnZLhNVkYw/sync';
+
+// Display all errors
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
