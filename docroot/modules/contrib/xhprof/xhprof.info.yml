@@ -1,0 +1,13 @@
+name: XHProf
+type: module
+description: 'Provides code profiling with XHProf integration.'
+package: Development
+# core: 8.x
+
+configure: xhprof.admin_configure
+
+# Information added by Drupal.org packaging script on 2015-11-22
+version: '8.x-1.0-beta1+44-dev'
+core: '8.x'
+project: 'xhprof'
+datestamp: 1448207941
