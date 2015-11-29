@@ -1,0 +1,3 @@
+page_test.index:
+  title: Pages Index
+  route_name: pages_test.index

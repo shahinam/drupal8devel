@@ -1,0 +1,15 @@
+
+pages_test.index:
+  path: '/pages-test'
+  defaults:
+    _controller: '\Drupal\pages_test\Controller\PagesTestController::index'
+    _title: 'Pages Test'
+  requirements:
+    _permission: 'access test pages'
+pages_test.info:
+  path: '/pages-test/{id}'
+  defaults:
+    _controller: '\Drupal\pages_test\Controller\PagesTestController::infoContent'
+    _title_callback: '\Drupal\pages_test\Controller\PagesTestController::infoTitle'
+  requirements:
+    _permission: 'access test pages'

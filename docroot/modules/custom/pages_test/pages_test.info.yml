@@ -1,0 +1,5 @@
+name: Pages Test
+type: module
+description: Pages Test
+core: 8.x
+package: Test
