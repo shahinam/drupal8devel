@@ -1,0 +1,5 @@
+name: assets_test
+type: module
+description: Assets (CSS, JS) Test.
+core: 8.x
+package: Test

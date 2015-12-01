@@ -1,0 +1,15 @@
+assets_test.list:
+  css:
+    # theme key can be: base, layout, component, state and theme
+    # This is defined by SMACSS.
+    component:
+      css/list.css: {}
+  js:
+    js/list.js: {}
+  dependencies:
+    - core/jquery
+    # Makes window.Drupal available.
+    - core/drupal
+    # Makes window.drupalSettings available.
+    # no need to specify this, this is loaded with core/drupal as dependency.
+    #- core/drupalSettings

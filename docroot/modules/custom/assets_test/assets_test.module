@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains assets_test.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function assets_test_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the assets_test module.
+    case 'help.page.assets_test':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Assets (CSS, JS) Test.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
